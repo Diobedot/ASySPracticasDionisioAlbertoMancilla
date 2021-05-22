@@ -1,2 +1,2 @@
 # ASySPracticasDionisioAlbertoMancilla
-P01 de la materia de Análisis de Señales y Sistemas
+Prácticas de la materia de Análisis de Señales y Sistemas 2021/2
