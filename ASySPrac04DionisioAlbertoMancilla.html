@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2020a"><title>P04: Convolución y correlación</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(213, 80, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+.S1 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S2 { margin-bottom: 20px; padding-bottom: 4px;  }
+.S3 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 700; text-align: start;  }
+.S4 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: start;  }
+.S5 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S6 { margin: 10px 0px 20px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  }
+.S7 { margin-left: 56px; line-height: 21px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
+.S8 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 17px; font-weight: 700; text-align: left;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>P04: Convolución y correlación</span></h1><div  class = 'S1'><span>Integrantes:</span></div><div  class = 'S1'><span>Dionisio Alberto Mancilla Delgado</span></div><div  class = 'S1'><span>Gabriel Alejandro Pérez Terán</span></div><div  class = 'S1'><span>Julio César Álvarez Gómez</span></div><div  class = 'S1'><span>Pedro Isaac Güereque Corpus</span></div><div  class = 'S2'><div  class = 'S3'><span>Índice</span></div><div  class = 'S4'><a href = "#H_094B1ED2"><span>Objetivos:
+</span></a><a href = "#H_18C16B31"><span>Introducción:
+</span></a><a href = "#H_AD098626"><span>Desarrollo:
+</span></a><span>    </span><a href = "#H_53C73D35"><span>1. Problema 1:
+</span></a><span>    </span><a href = "#H_639CB3E2"><span>2. Problema 2:
+</span></a><span>    </span><a href = "#H_6730FDE8"><span>3. Problema 3:
+</span></a><span>    </span><a href = "#H_03B0EFE5"><span>4. Problema 4:
+</span></a><span>    </span><a href = "#H_94115FC4"><span>5. Problema 5:
+</span></a><a href = "#H_787DD30B"><span>Referencias</span></a></div></div><h2  class = 'S5' id = 'H_094B1ED2' ><span>Objetivos:</span></h2><ul  class = 'S6'><li  class = 'S7'><span>Conocer métodos básicos de integración numérica</span></li><li  class = 'S7'><span>Manipulación de instrucciones en MATLAB</span></li><li  class = 'S7'><span>Simular convoluciones y correlaciones de señales continuas</span></li><li  class = 'S7'><span>Simular convoluciones y correlaciones de señales discretas</span></li></ul><h2  class = 'S5' id = 'H_18C16B31' ><span>Introducción:</span></h2><h2  class = 'S5' id = 'H_AD098626' ><span>Desarrollo:</span></h2><h3  class = 'S8' id = 'H_53C73D35' ><span style=' font-weight: bold;'>1. </span><span>Problema 1:</span></h3><div  class = 'S1'><span>Para el PR04 reporte la grafica de la simulación númerica de la convolución y compare con el resultado análitico que obtuvo para el problema 1, esto es, su práctica tendrá que incluir una llamada a la funciónn</span><span> </span><span style=' font-style: italic;'>convconm</span><span> </span><span>y posteriormente se tendrá que mostrar (mediante el Publish) la gráfica tanto de las señales involucradas como el resultado de la convolución, y en esta última gráficara su resultado analitico, se tendrá que incluir el resultado analitico.</span></div><h3  class = 'S8' id = 'H_639CB3E2' ><span>2. Problema 2:</span></h3><div  class = 'S1'><span>Para el PR05 reporte la grafica de la simulación númerica de la correalción y compare con el resultado análitico que obtuvo para el problema e), esto es, su práctica tendrá que incluir una llamada a la funciónn</span><span> </span><span style=' font-style: italic;'>convconm</span><span> </span><span>y posteriormente se tendrá que mostrar (mediante el Publish) la gráfica tanto de las señales involucradas como el resultado de su correlación, y en esta última graficara su resultado analitico, se tendrá que incluir el resultado analitico.</span></div><h3  class = 'S8' id = 'H_6730FDE8' ><span>3. Problema 3:</span></h3><div  class = 'S1'><span>Realice la simuación de la convolución de las señales (c) con (d) del problema 3.1.1</span></div><h3  class = 'S8' id = 'H_03B0EFE5' ><span style=' font-weight: bold;'>4.</span><span> Problema 4:</span></h3><div  class = 'S1'><span>Realice la simuación de la correlación de las señales (c) con (d) del problema 3.1.1</span></div><h3  class = 'S8' id = 'H_94115FC4' ><span style=' font-weight: bold;'>5.</span><span> Problema 5:</span></h3><div  class = 'S1'><span>Realice la la convolución de las señales (c) con (d) del problema 3.1.1 utilizando el comando</span><span> </span><span style=' font-weight: bold;'>conv</span><span> </span><span>de MATLAB, muestre el código utilizado y gráfique el resultado, sugerencia: Utilice las propiedades de traslación de la convolución.</span></div><h2  class = 'S5' id = 'H_787DD30B' ><span>Referencias</span></h2><div  class = 'S1'><span>Lathi, E. B. P., &amp; Green, A. P. R. (2017). Linear Systems and Signals (3rd ed.). Oxford University Press, USA.</span></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% P04: Convolución y correlación
+% Integrantes:
+% 
+% Dionisio Alberto Mancilla Delgado
+% 
+% Gabriel Alejandro Pérez Terán
+% 
+% Julio César Álvarez Gómez
+% 
+% Pedro Isaac Güereque Corpus
+%% Objetivos:
+%% 
+% * Conocer métodos básicos de integración numérica
+% * Manipulación de instrucciones en MATLAB
+% * Simular convoluciones y correlaciones de señales continuas
+% * Simular convoluciones y correlaciones de señales discretas
+%% Introducción:
+%% Desarrollo:
+% *1.* Problema 1:
+% Para el PR04 reporte la grafica de la simulación númerica de la convolución 
+% y compare con el resultado análitico que obtuvo para el problema 1, esto es, 
+% su práctica tendrá que incluir una llamada a la funciónn _convconm_ y posteriormente 
+% se tendrá que mostrar (mediante el Publish) la gráfica tanto de las señales 
+% involucradas como el resultado de la convolución, y en esta última gráficara 
+% su resultado analitico, se tendrá que incluir el resultado analitico.
+% 2. Problema 2:
+% Para el PR05 reporte la grafica de la simulación númerica de la correalción 
+% y compare con el resultado análitico que obtuvo para el problema e), esto es, 
+% su práctica tendrá que incluir una llamada a la funciónn _convconm_ y posteriormente 
+% se tendrá que mostrar (mediante el Publish) la gráfica tanto de las señales 
+% involucradas como el resultado de su correlación, y en esta última graficara 
+% su resultado analitico, se tendrá que incluir el resultado analitico.
+% 3. Problema 3:
+% Realice la simuación de la convolución de las señales (c) con (d) del problema 
+% 3.1.1
+% *4.* Problema 4:
+% Realice la simuación de la correlación de las señales (c) con (d) del problema 
+% 3.1.1
+% *5.* Problema 5:
+% Realice la la convolución de las señales (c) con (d) del problema 3.1.1 utilizando 
+% el comando *conv* de MATLAB, muestre el código utilizado y gráfique el resultado, 
+% sugerencia: Utilice las propiedades de traslación de la convolución.
+%% Referencias
+% Lathi, E. B. P., & Green, A. P. R. (2017). Linear Systems and Signals (3rd 
+% ed.). Oxford University Press, USA.
+##### SOURCE END #####
+--></body></html>
